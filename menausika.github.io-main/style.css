@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+header{
+    background-image: url(images/hero.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+.menu .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #0EAEF3;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.content {
+    padding: 150px 150px 0px 0px;
+}
+
+.content h1 {
+    color: #ffffff;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 55px;
+    line-height: 55px;
+}
+
+.content p {
+    margin-top: 10px;
+    color: #AAB1FF;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: rgba(170, 177, 255,0.3);
+    border: 5px solid #AAB1FF;
+    margin: 10px 5px 0px 0px;
+    padding: 15px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background-color: #AAB1FF;
+}
+
+.services {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.service {
+    padding: 25px;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 20px rgba(135, 141, 214,0.3);
+
+}
+
+.service img {
+    margin-top: -50px;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #0E0E0E;
+    margin-bottom: 10px;
+}
+
+.btn-1 p {
+  
+
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    
+
+}
+.btn-1 p {
+    
+    top: -20px;
+    text-align: center;
+    justify-content: center;
+    
+    display: flex;
+}
+.service p{
+    color: #525254;
+    font-size: 16px;
+
+}
+
+.porfolios {
+    padding: 80px 0px;
+    text-align: center;
+    color: #0E0E0E;
+}
+
+.porfolios h2 {
+    font-size: 55px;
+}
+
+.porfolio {
+    display: flex;
+    align-items: center;
+}
+
+.porfolio img {
+    width: 350px;
+}
+
+.porfolio-1 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.porfolio-1 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-1 p{
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.porfolio-2 {
+    text-align: left;
+    margin-right: 100px;
+}
+
+.porfolio-2 h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-2 p {
+    font-size: 18px;
+    color: #525254;
+    margin-bottom: 25px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #7042B5;
+    color: #ffffff;
+}
+
+.btn-2 {
+    background-color: #8650D7;
+}
+
+footer {
+    padding: 200px 0px 30px 0px;
+    background-image: url(images/footer.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-content {
+    display: flex;
+}
+
+.info-price {
+    padding: 35px;
+    text-align: center;
+    background-color: #F5F5F5;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    margin: 0px 150px 0px 0px;
+    color: #0E0E0E;
+}
+
+.info-price h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 14px;
+    color: #0EAEF3 !important;
+    margin-bottom: 10px;
+}
+
+.info-price p {
+    font-size: 16px;
+    color: #525254;
+}
+
+.info-txt {
+    margin-left: 35px;
+    color: #ffffff;
+}
+
+hr {
+    margin: 45px 0px;
+    border: 0.5px solid #AAB1FF;
+
+}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.enlaces h3 {
+    font-size: 25px;
+}
+
+.enlace {
+    display: flex;
+}
+
+.enlace li a {
+    display: block;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.enlace li a:hover {
+    color: #0EAEF3;
+}
+
+@media (max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #5b50BC;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    header {
+        height: 0vh;
+        padding: 400px 0px;
+        background-position: center center;
+    }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+    .content {
+        padding: 0px;
+        font-size: 0px;
+    }
+
+    .content h1 {
+        margin-top: 100px;
+        font-size: 45px;
+    }
+
+    .content p {
+        margin-top: 0px;
+    }
+    .header-content img {
+        width: 150px;
+    }
+    .services {
+        flex-direction: column;
+        padding: 50px 30px 0px 30px;
+    }
+
+    .service {
+        margin-bottom: 50px;
+    }
+
+    .porfolios {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .porfolios h2 {
+        margin-bottom: 15px;
+    }
+    .porfolio {
+        flex-direction: column;
+    }
+
+    .porfolio img {
+        display: none;
+    }
+    .porfolio-1 {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    .porfolio-2 {
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+    }
+
+    footer {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-price {
+        margin: 0px 0px 20px 0px;
+    }
+    .info-txt {
+        margin: 0px;
+    }
+    hr {
+        margin: 25px 0px;
+    }
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+    .enlace {
+        flex-direction: column;
+    }
+}
+
+.header {
+    background-image: url(images/fondoo.jpg); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el área del elemento */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Espaciado interno opcional */
+    margin-bottom: 0px; /* Espaciado entre secciones opcional */
+    min-height: 3500px;
+    background-attachment: fixed;
+
+  }
+
+  .LOGO {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px; 
+    margin-top: 100px;
+    align-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center; 
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: #ffffff;
+    font-weight: 20;}
+  
+    .AVATARES {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px; 
+        margin-top: 100px;
+        align-content: center;
+        gap: 20px;
+        display: flex;
+        align-items: center; 
+        font-size: 20px;
+        margin-bottom: 100px;
+        color: #ffffff;
+        font-weight: 20;}
+
+        .DESCRIPCION  {
+            
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+            color: #ffffff;
+            font-weight: 20;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .KIT {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px; 
+            margin-top: 100px;
+            align-content: center;
+            gap: 20px;
+            display: flex;
+            align-items: center; 
+            font-size: 20px;
+            margin-bottom: 100px;
+            color: #ffffff;
+            font-weight: 20;}
+        
+
+
+            .POLITICAS {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 25px; 
+                margin-top: 100px;
+                align-content: center;
+                gap: 20px;
+                display: flex;
+                align-items: center; 
+                font-size: 20px;
+                margin-bottom: 100px;
+                color: #ffffff;
+                font-weight: 20;
+                max-width: 500px;
+                margin: 0 auto;
+                padding: 50px;
+                                }
+
+                .MAPA {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 25px; 
+                    margin-top: 100px;
+                    align-content: center;
+                    gap: 20px;
+                    display: flex;
+                    align-items: center; 
+                    font-size: 20px;
+                    margin-bottom: 100px;
+                    color: #ffffff;
+                    font-weight: 20;}
+            
+
+                    .redessociales {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 25px; 
+                        margin-top: 100px;
+                        align-content: center;
+                        gap: 20px;
+                        display: flex;
+                        align-items: center; 
+                        font-size: 20px;
+                        margin-bottom: 100px;
+                        color: #ffffff;
+                        font-weight: 20;}
+
+                        .FOLLETO {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            text-align: center;
+                            margin-bottom: 25px; 
+                            margin-top: 100px;
+                            align-content: center;
+                            gap: 20px;
+                            display: flex;
+                            align-items: center; 
+                            font-size: 20px;
+                            margin-bottom: 100px;
+                            color: #ffffff;
+                            font-weight: 20;}
+
+                            .VOLANTE {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                text-align: center;
+                                margin-bottom: 25px; 
+                                margin-top: 100px;
+                                align-content: center;
+                                gap: 20px;
+                                display: flex;
+                                align-items: center; 
+                                font-size: 20px;
+                                margin-bottom: 100px;
+                                color: #ffffff;
+                                font-weight: 20;}
+
+                                .GA {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-bottom: 25px; 
+                                    margin-top: 100px;
+                                    align-content: center;
+                                    gap: 20px;
+                                    display: flex;
+                                    align-items: center; 
+                                    font-size: 20px;
+                                    margin-bottom: 100px;
+                                    color: #ffffff;
+                                    font-weight: 20;}
+
+                                    .GA img {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100vh;
+                                        margin: 0;
+                                        max-width: 100%; /* Para que las imágenes no se desborden */
+                                        margin-bottom: 20px; /* Espacio entre las imágenes */
+                                        width: 300px;
+                                        height: auto;
+                                    }
+
+
+
+                                    .CATALOGO {
+                                        display: flex;
+                                        flex-direction: column;
+                                        width: 100%;
+                                        text-align: center;
+                                        margin-bottom: 25px; 
+                                        margin-top: 100px;
+                                        align-content: center;
+                                        gap: 20px;
+                                        display: flex;
+                                        align-items: center; 
+                                        font-size: 20px;
+                                        margin-bottom: 100px;
+                                        color: #ffffff;
+                                        font-weight: 20;}
+
+                                        .CATALOGO img {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            height: 100vh;
+                                            margin: 0;
+                                            max-width: 100%; /* Para que las imágenes no se desborden */
+                                            margin-bottom: 20px; /* Espacio entre las imágenes */
+                                            width: 300px;
+                                            height: auto;
+                                        }
+    
+
+                                        .qredes {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            text-align: center;
+                                            margin-bottom: 25px; 
+                                            margin-top: 100px;
+                                            align-content: center;
+                                            gap: 20px;
+                                            display: flex;
+                                            align-items: center; 
+                                            font-size: 20px;
+                                            margin-bottom: 100px;
+                                            color: #ffffff;
+                                            font-weight: 20;
+                                            display: f;
+                                        }
+
+                                        .qredes img {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            height: 600vh;
+                                            margin: 100;
+                                            max-width: 100%; /* Para que las imágenes no se desborden */
+                                            margin-bottom: 20px; /* Espacio entre las imágenes */
+                                            width: 300px;
+                                            height: auto;
+                                        }
+
+                                            .tarjet  {
+                                                display: flex;
+                                                flex-direction: column;
+                                                width: 100%;
+                                                text-align: center;
+                                                margin-bottom: 25px; 
+                                                margin-top: 100px;
+                                                align-content: center;
+                                                gap: 20px;
+                                                display: flex;
+                                                align-items: center; 
+                                                font-size: 20px;
+                                                margin-bottom: 100px;
+                                                color: #ffffff;
+                                                font-weight: 20;
+                                                display: flex;
+                                            
+                                            }
+
+                                            .tarjet img {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                height: 100vh;
+                                                margin: 0;
+                                                max-width: 100%; /* Para que las imágenes no se desborden */
+                                                margin-bottom: 20px; /* Espacio entre las imágenes */
+                                                width: 300px;
+                                                height: auto;
+                                            }
+
+                                            
+                                                .ubicacion  {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    width: 100%;
+                                                    text-align: center;
+                                                    margin-bottom: 25px; 
+                                                    margin-top: 100px;
+                                                    align-content: center;
+                                                    gap: 20px;
+                                                    display: flex;
+                                                    align-items: center; 
+                                                    font-size: 20px;
+                                                    margin-bottom: 100px;
+                                                    color: #ffffff;
+                                                    font-weight: 20;}
+
+                                                    .horario  {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        width: 100%;
+                                                        text-align: center;
+                                                        margin-bottom: 25px; 
+                                                        margin-top: 100px;
+                                                        align-content: center;
+                                                        gap: 20px;
+                                                        display: flex;
+                                                        align-items: center; 
+                                                        font-size: 20px;
+                                                        margin-bottom: 100px;
+                                                        color: #ffffff;
+                                                        font-weight: 20;}
+
+                                                        .informacion  {
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            width: 100%;
+                                                            text-align: center;
+                                                            margin-bottom: 25px; 
+                                                            margin-top: 100px;
+                                                            align-content: center;
+                                                            gap: 20px;
+                                                            display: flex;
+                                                            align-items: center; 
+                                                            font-size: 20px;
+                                                            margin-bottom: 100px;
+                                                            color: #ffffff;
+                                                            font-weight: 20;}
+
+                                                           
+
+
+                                                            
+
+
+                                                            .custom-container {
+                                                                position: absolute;
+                                                                top: 50px; /* Ajusta según sea necesario */
+                                                                left: 50%;
+                                                                transform: translateX(-50%);
+                                                                width: 90%;
+                                                                height: 80vh;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                flex-wrap: wrap;
+                                                                z-index: 10; /* Asegura que esté encima de otros elementos */
+                                                            }
+                                                            
+                                                            .custom-corner {
+                                                                position: absolute;
+                                                                width: 30%; /* Ajustado para más espacio entre recuadros */
+                                                                padding: 14px;
+                                                                box-sizing: border-box;
+                                                                color: white; /* Texto blanco */
+                                                                background: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente para mejor contraste */
+                                                                border-radius: 8px; /* Bordes redondeados */
+                                                                font-size: 1em;
+                                                                text-align: center;
+                                                                overflow: hidden;
+                                                                white-space: normal; /* Permite múltiples líneas de texto */
+                                                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra para mejor visibilidad */
+                                                            }
+                                                            
+                                                            .top-left {
+                                                                top: 30px; /* Ajustado para bajar el título 1 */
+                                                                left: 10px;
+                                                            }
+                                                            
+                                                            .top-right {
+                                                                top: 30px; /* Ajustado para bajar el título 2 */
+                                                                right: 10px;
+                                                            }
+                                                            
+                                                            .bottom-left {
+                                                                bottom: 10px; /* Ajustado para separación inferior */
+                                                                left: 10px;
+                                                            }
+                                                            
+                                                            .bottom-right {
+                                                                bottom: 10px; /* Ajustado para separación inferior */
+                                                                right: 10px;
+                                                            }
+                                                            
+                                                            .custom-center {
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                transform: translate(-50%, -50%);
+                                                                width: 30%; /* Ajustado para hacer la imagen más pequeña */
+                                                                height: auto;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                z-index: 1; /* Asegura que esté por debajo de los textos */
+                                                            }
+                                                            
+                                                            .custom-center img {
+                                                                max-width: 100%;
+                                                                height: auto;
+                                                                border-radius: 8px; /* Bordes redondeados */
+                                                            }
+                                                            
+                                                            /* Estilos responsivos para dispositivos móviles */
+                                                           
+                                                            
+                                                            @media (max-width: 768px) {
+                                                                .custom-container {
+                                                                    flex-direction: column;
+                                                                    align-items: center;
+                                                                    height: auto; /* Ajustar altura para dispositivos móviles */
+                                                                    padding: 20px; /* Añadir padding para evitar que los recuadros toquen los bordes */
+                                                                }
+                                                            
+                                                                .custom-corner {
+                                                                    width: 90%; /* Ajustar ancho para móviles */
+                                                                    padding: 10px;
+                                                                    font-size: 0.9em;
+                                                                    position: relative; /* Cambiado a relative para apilar verticalmente */
+                                                                    margin-bottom: 20px; /* Añadir espacio entre los recuadros */
+                                                                    white-space: normal; /* Permitir múltiples líneas */
+                                                                    box-shadow: none; /* Quitar sombra en móviles */
+                                                                }
+                                                            
+                                                                .top-left, .top-right, .bottom-left, .bottom-right {
+                                                                    bottom: auto; /* Resetea la posición inferior */
+                                                                    top: auto; /* Resetea la posición superior */
+                                                                    left: auto; /* Resetea la posición izquierda */
+                                                                    right: auto; /* Resetea la posición derecha */
+                                                                }
+                                                            
+                                                                .custom-center {
+                                                                    width: 80%; /* Ajustar ancho de imagen para móviles */
+                                                                    height: auto;
+                                                                    margin-top: 550px; /* Aumentar margen superior para separar la imagen de los párrafos */
+                                                                }
+                                                            
+                                                                .custom-center img {
+                                                                    width: 100%;
+                                                                    height: auto;
+                                                                }
+                                                            }
+
+
+
+
+
+
+
+                                                            .recuadro {
+                                                                position: relative;
+                                                                padding: 20px; /* Espacio dentro del recuadro */
+                                                                 /* Borde negro semitransparente */
+                                                                border-radius: 8px; /* Bordes redondeados */
+                                                                background: rgba(0, 0, 0, 0.1); /* Fondo muy tenue para el recuadro */
+                                                                color: white; /* Texto blanco */
+                                                                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+                                                                margin-bottom: 20px; /* Espacio entre recuadros */
+                                                                background: rgba(0, 0, 0, 0.7);
+                                                            }
+                                                            
+                                                            /* Ajustes para móviles */
+                                                            @media (max-width: 768px) {
+                                                                .recuadro {
+                                                                    padding: 15px; /* Reducir padding para móviles */
+                                                                    border-width: 1px; /* Hacer el borde más delgado en móviles */
+                                                                    font-size: 0.9em; /* Ajustar tamaño del texto en móviles */
+                                                                }
+                                                            }
+
+
+                                                            .enlace {
+                                                                display: inline-block;
+                                                                background-color: rgba(170, 177, 255,0.3);
+                                                                border: 5px solid #AAB1FF;
+                                                                margin: 20px -50px 0px 0px;
+                                                                padding: 10px 10px;
+                                                                color: #ffffff;
+                                                                border-radius: 25px;
+                                                            }
+
+
+                                                            .enlace img {
+                                                                width: 30px; /* Tamaño del logo */
+                                                                height: 30px; /* Tamaño del logo */
+                                                                margin-right: 10px; /* Espacio entre el logo y el texto */
+                                                                line-height: auto;
+                                                                
+                                                            }
+
+                                                            .videocontainer {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                            }
+
+                                                            .VIDEO1 {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                            }
+
+                                                            .recuadro {
+  text-align: center; /* Esto centra tanto la imagen como el botón */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.boton-red {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #E1306C;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.boton-red:hover {
+  background-color: #c72c60;
+}
+
+
+                                                            .content {
+
+                                                            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         
+
+
+
+
+
+
+                                                            
+                                                      
